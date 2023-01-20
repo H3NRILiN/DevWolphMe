@@ -1,2 +1,0 @@
-# DevWolphMe
-My personal website
