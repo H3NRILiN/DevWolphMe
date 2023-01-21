@@ -7,24 +7,87 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="src/style.css" />
+
+    <link rel="preload" as="image" href="https://imgur.com/S5hb0b3.jpeg" />
+    <link rel="preload" as="image" href="https://imgur.com/gfkHxBP.jpeg" />
+    <link rel="preload" as="image" href="https://imgur.com/kmzLkSZ.jpeg" />
+    <title>DevWolphMe</title>
   </head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5JL63R6BZF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-5JL63R6BZF"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag('config', 'G-5JL63R6BZF');
-</script>
+    gtag("config", "G-5JL63R6BZF");
+  </script>
+
   <body>
-    <div id="myNameContainer">
+    <div id="myName-container">
       <div class="title animUp" id="myName">DEVWOLPH</div>
     </div>
-    <div id="mainContentContainer">
-      <p>我的網站</p>
+    <div id="mainContent-container">
+      <p id="subTitle" class="nobackground-text">作品：</p>
+      <div id="article-container">
+        <div class="general-article">
+          <div class="article-banner-container">
+            <img
+              class="article-banner"
+              src="https://imgur.com/S5hb0b3.jpg?1"
+              alt="1"
+            />
+          </div>
+          <h1>Project underground infinite</h1>
+          <p>類型：開放式界、3D Platformer、射擊、生存</p>
+          <div class="splitter"></div>
+          <p></p>
+        </div>
+        <div class="general-article">
+          <div class="article-banner-container">
+            <img
+              class="article-banner"
+              src="https://imgur.com/gfkHxBP.jpg?1"
+              alt="2"
+            />
+          </div>
+          <h1>Project Colonist</h1>
+          <p>類型：開放式界、FPS、生存</p>
+          <div class="splitter"></div>
+          <p></p>
+          <img class="article-pic" src="https://imgur.com/gfkHxBP.jpg" />
+          <img class="article-pic" src="https://imgur.com/GzRhGhI.jpg" />
+          <img class="article-pic" src="https://imgur.com/XhqhbKI.jpg" />
+          <p></p>
+        </div>
+        <div class="general-article">
+          <div class="article-banner-container">
+            <img
+              class="article-banner"
+              src="https://imgur.com/kmzLkSZ.jpg?1"
+              alt="3"
+            />
+          </div>
+          <h1>Suffocation</h1>
+          <p>類型：恐怖、FPS</p>
+          <div class="splitter"></div>
+          <p></p>
+
+          <img class="article-pic" src="https://imgur.com/wwyLVMu.jpg" />
+          <img class="article-pic" src="https://imgur.com/kmzLkSZ.jpg" />
+          <p>
+            <br />
+            <br />
+          </p>
+        </div>
+      </div>
     </div>
+    <script src="src/script.js"></script>
   </body>
 </html>

@@ -1,15 +1,24 @@
 body {
   font-family: "Noto Sans TC", sans-serif;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: 50px;
+
   height: 100%;
   background: rgb(70, 70, 70);
+  color: aliceblue;
+}
+h1 {
+  font-style: normal;
+  font-weight: 500;
 }
 
 .title {
   font-weight: 300;
 }
 
-#myNameContainer {
+#myName-container {
   display: block;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -41,20 +50,120 @@ body {
   font-size: 10vw;
 }
 
-#mainContentContainer {
-  display: block;
+#subTitle {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
 
-  color: aliceblue;
+#mainContent-container {
+  display: block;
 
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
   /* background-color: aliceblue; */
+}
 
+.nobackground-text {
+  color: aliceblue;
   text-shadow: 0px 3px 15px rgb(0, 0, 0);
-
+}
+.center-text {
   text-align: center;
+}
+
+#article-container {
+  --border-radius: 0px;
+  margin: auto;
+  max-width: 1024px;
+  perspective: 100vw;
+
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.267));
+}
+
+.general-article {
+  --deg: 0deg;
+  padding: 20px;
+  margin: 15px;
+
+  border-radius: var(--border-radius);
+  /* filter: drop-shadow(0 0 15px black); */
+
+  background-color: rgb(142, 148, 155);
+
+  transform-style: 3d;
+  transform: rotateX(var(--deg));
+
+  font-weight: 300;
+
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+@keyframes rotateToOrigin {
+}
+
+.general-article h1 {
+  font-variant: small-caps;
+  /* padding: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0.5%,
+    rgba(0, 0, 0, 0.2) 10%,
+    rgba(0, 0, 0, 0) 100%
+  ); */
+  font-size: 5vh;
+  display: inline;
+  text-shadow: 0 0 5px black;
+}
+
+.article-banner-container {
+}
+
+.article-banner {
+  border-radius: var(--border-radius);
+
+  margin: -20px;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    rgb(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 300px
+  );
+  filter: blur(1px) opacity(0.8) brightness(0.5);
+
+  image-rendering: optimizeSpeed;
+}
+
+.article-pic {
+  display: block;
+  border-radius: 5px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  width: 100%;
+  image-rendering: optimizeSpeed;
+}
+
+.splitter {
+  margin-top: 15px;
+  margin-down: 15px;
+  margin-left: -20px;
+  margin-right: -20px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 @keyframes slideInFromLeft {
