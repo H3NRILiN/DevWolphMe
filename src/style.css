@@ -53,6 +53,7 @@ h1 {
 #subTitle {
   margin-top: 5px;
   margin-bottom: 20px;
+  font-size: 1.5vw;
 }
 
 #mainContent-container {
@@ -82,7 +83,7 @@ h1 {
   filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.267));
 }
 
-.general-article {
+.article-block {
   --deg: 0deg;
   padding: 20px;
   margin: 15px;
@@ -103,7 +104,7 @@ h1 {
 @keyframes rotateToOrigin {
 }
 
-.general-article h1 {
+.article-block h1 {
   font-variant: small-caps;
   /* padding: 5px;
   background: linear-gradient(

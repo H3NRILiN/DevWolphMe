@@ -1,6 +1,6 @@
 // var articleEl = document.querySelector(".general-article");
 
-var els = document.getElementsByClassName("general-article");
+var els = document.getElementsByClassName("article-block");
 var bodyEl = document.querySelector("body");
 
 // var deg = 0;
